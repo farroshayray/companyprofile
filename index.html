@@ -21,10 +21,10 @@
                         <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
                     </div>
                     <div class="dropdown-content" id="under-nav1" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
-                        <a href="#">Android</a>
-                        <a href="#">iOS</a>
-                        <a href="#">Web</a>
-                        <a href="#">Desktop</a>
+                        <a href="#app-android">Android</a>
+                        <a href="#app-android">iOS</a>
+                        <a href="#app-android">Web</a>
+                        <a href="#app-android">Desktop</a>
                     </div>
                 </div>
                 <div class="dropdown" onmouseover="showContainer2()" onmouseout="hideContainer2()">
@@ -62,7 +62,7 @@
                 </div>
             </nav>
             <div class="right-nav">
-                <button class="right-nav-button">
+                <button onclick="scrollToMainContainer()" class="right-nav-button">
                     <div>Get Started</div>
                     <img src="./assets/pictures/icons8-enter-32.png" alt="enter icon" class="enter-button1">
                 </button>
@@ -72,31 +72,151 @@
             <h1>Technology <br> Creation Platform</h1>
             <p>build all kinds of software and hardware technology <br> for your company</p>
             <div class="headerbtn-par">
-                <button class="headerbtn-child">
+                <button onclick="scrollToMainContainer()" class="headerbtn-child">
                     <div>Get Started</div>
                     <img src="./assets/pictures/icons8-enter-32.png" alt="enter icon" class="enter-button2">
                 </button>
             </div>
         </div>
-
     </header>
-    <main class="main-container">
-        <h2>Our Products</h2>
+    <main class="main-container" id="main-container">
+        <h2>Stay Connected With Us</h2>
         <section class="grid-container">
-            <div class="content1 grid-content">
-                content1
+            <div class="content1-container">
+                <div class="content1 grid-content">
+                    <div class="app-carousel" id="app-android">
+                        <h3>Android</h3><br>
+                        <h4>Unlock Your Business Potential with a Custom Android App!</h4><br>
+                        <p>In today's fast-paced digital world, having a strong mobile presence is essential for any business looking to stay competitive. Imagine reaching millions of potential customers right at their fingertips, offering seamless user experiences, and driving your business growth to new heights. This is exactly what a custom Android application from our company can do for you.</p><br>
+                        <h5>Why Choose Us?</h5><br>
+                        <ol>
+                            <li>Expertise and Experience: With years of experience in the industry, our team of skilled developers is well-versed in the latest technologies and trends. We have successfully delivered numerous Android applications across various sectors, ensuring that your project is in capable hands.</li><br>
+                            <li>Tailored Solutions: We understand that every business is unique. That's why we take the time to understand your specific needs and goals, crafting a customized solution that aligns perfectly with your vision. Whether you need an e-commerce app, a productivity tool, or a gaming platform, we've got you covered.</li><br>
+                            <li>User-Centric Design: Our design philosophy revolves around the user. We create intuitive, visually appealing interfaces that provide a seamless and engaging user experience. Your customers will love using your app, leading to higher engagement and retention rates.</li><br>
+                            <li>Robust and Scalable: Our apps are built to last. We ensure that your application is not only robust and secure but also scalable to accommodate future growth. As your business expands, your app will be able to handle increased traffic and new features effortlessly.</li><br>
+                            <li>Comprehensive Support: From concept to launch and beyond, we offer end-to-end support to ensure your app's success. Our dedicated support team is always available to address any issues, provide updates, and help you make the most of your mobile presence.</li><br>
+                        </ol>
+                        <h4>Join the Mobile Revolution</h4><br>
+                        <p>Don't miss out on the incredible opportunities that a custom Android app can bring to your business. Partner with us to transform your ideas into reality and achieve unparalleled success in the mobile market. Contact us today to get started on your journey to digital excellence!</p>
+                    </div>
+                    <div class="app-carousel" id="app-ios" style="display: none;">
+                        <h3>iOS</h3><br>
+                        <h4>Unlock the Full Potential of Your Business with Our Custom iOS App Development Services</h4><br>
+                        <p>In today's fast-paced digital world, having a robust mobile presence is no longer a luxury but a necessity. At Your Company, we specialize in creating top-tier iOS applications that not only meet but exceed your business needs. Here's why partnering with us is the smartest move for your business:</p><br>
+                        <h5>Expertise and Experience</h5><br>
+                        <p>Our team consists of highly skilled developers with years of experience in iOS app development. We have successfully delivered a diverse range of apps, from e-commerce platforms and social networking sites to complex enterprise solutions. Our deep understanding of Apple's ecosystem ensures that we leverage the latest technologies and best practices to build apps that are not only functional but also future-proof.</p><br>
+                        <h5>Tailored Solutions</h5><br>
+                        <p>We understand that every business is unique, and so are its requirements. That’s why we offer bespoke iOS app development services. Whether you're a startup looking to make your mark or an established enterprise aiming to enhance your mobile strategy, we tailor our solutions to fit your specific goals and challenges. Our custom apps are designed to reflect your brand’s identity and cater to your target audience, ensuring a personalized user experience.</p><br>
+                        <h5>Seamless User Experience</h5>br
+                        <p>User experience is at the heart of everything we do. Our design team works meticulously to create intuitive and engaging interfaces that provide a seamless experience. By focusing on user-centric design principles, we ensure that your app is not only visually appealing but also easy to navigate, encouraging user retention and satisfaction.</p><br>
+                        <h5>Robust and Secure</h5><br>
+                        <p>Security is a top priority in our development process. We implement stringent security measures to protect your app and its users from potential threats. From data encryption to secure authentication methods, we ensure that your app complies with industry standards and provides a safe environment for users.</p><br>
+                        <h5>End-to-End Services</h5><br>
+                        <p>From concept to deployment, we offer end-to-end iOS app development services. Our process starts with a thorough understanding of your business objectives and continues through detailed planning, design, development, testing, and post-launch support. We are committed to providing a hassle-free experience, allowing you to focus on your core business while we take care of the technical details.</p><br>
+                        <h5>Continuous Support and Maintenance</h5><br>
+                        <p>Our relationship doesn’t end once your app is launched. We offer continuous support and maintenance services to ensure your app remains up-to-date and runs smoothly. Whether it’s adding new features, fixing bugs, or updating the app to comply with the latest iOS updates, we’ve got you covered.</p><br>
+                        <h5>Proven Track Record</h5><br>
+                        <p>We take pride in our proven track record of delivering successful iOS applications. Our clients span various industries, and their positive feedback speaks volumes about our commitment to excellence. By choosing us, you are partnering with a company that is dedicated to turning your vision into reality.</p><br>
+                        <h5>Competitive Pricing</h5><br>
+                        <p>Quality doesn’t have to come at a high price. We offer competitive pricing models that provide excellent value for your investment. Our transparent pricing structure ensures that there are no hidden costs, allowing you to budget effectively and achieve your business goals without financial strain.</p><br>
+                        <h5>Let’s Build Something Great Together</h5><br>
+                        <p>Don’t miss out on the opportunity to elevate your business with a custom iOS app. Let us help you harness the power of mobile technology to reach new heights. Contact us today to discuss your project and discover how we can transform your ideas into a successful mobile application At Your Company, we don’t just build apps; we create experiences that resonate with users and drive business growth. Partner with us and take the first step towards a brighter, more innovative future.</p><br>
+                    </div>
+                    <div class="app-carousel" id="app-web" style="display: none;">
+                        <h3>Web</h3><br>
+                        <p>Are you looking to transform your business with a robust, dynamic web application? Look no further! At Your Company, we specialize in creating state-of-the-art web applications tailored to meet your unique business needs.</p><br>
+                        <h4>Why Choose Us?</h4><br>
+                        <h5>Expertise and Experience</h5><br>
+                        <p>Our team of seasoned developers, designers, and project managers brings years of industry experience and technical prowess to the table. We have successfully delivered hundreds of projects across various sectors, ensuring that we understand the nuances and intricacies of web application development.</p><br>
+                        <h5>Customization at Its Best</h5><br>
+                        <p>We believe that no two businesses are the same. Hence, we offer customized solutions that align perfectly with your business objectives. Our applications are designed to be scalable, ensuring they grow with your business and adapt to future needs.</p><br>
+                        <h5>Cutting-Edge Technology</h5><br>
+                        <p>We leverage the latest technologies and best practices to deliver high-performance, secure, and user-friendly web applications. Whether it's integrating AI, utilizing cloud services, or implementing advanced security measures, we ensure your application is built with the future in mind.</p><br>
+                        <h5>Client-Centric Approach</h5><br>
+                        <p>Your satisfaction is our priority. From the initial consultation to the final deployment and beyond, we maintain transparent communication, keeping you informed and involved at every stage. Our agile development process allows for flexibility and quick iterations, ensuring the final product exceeds your expectations.</p><br>
+                        <h5>Competitive Pricing</h5><br>
+                        <p>Quality should not come at an exorbitant cost. We offer competitive pricing models that provide excellent value for your investment. With us, you get premium services without breaking the bank.</p><br>
+                        <h5>Post-Launch Support</h5><br>
+                        <p>Our commitment to your success doesn’t end at launch. We offer comprehensive post-launch support and maintenance services to ensure your application runs smoothly and remains up-to-date with the latest advancements.</p><br>
+                        <p>Join the ranks of our satisfied clients who have experienced significant business growth and enhanced customer engagement through our innovative web applications. At Your Company, we don’t just build applications; we create solutions that drive success.</p><br>
+                        <p>Ready to take your business to the next level? Contact us today and let's embark on a journey to digital excellence together!</p><br>
+                    </div>
+                    <div class="app-carousel" id="app-desktop" style="display: none;">
+                        <h3>Desktop</h3><br>
+                        <h4>Unlock the Full Potential of Your Business with Our Desktop Application Solutions</h4><br>
+                        <p>In today’s fast-paced digital landscape, having a robust, efficient, and user-friendly desktop application can set your business apart from the competition. At Your Company, we specialize in creating cutting-edge desktop applications tailored to meet your unique needs. Here’s why partnering with us is the best decision you can make for your business:</p><br>
+                        <h5>Customized Solutions</h5><br>
+                        <p>Every business is unique, and so are its requirements. Our team of expert developers takes the time to understand your specific needs, challenges, and goals. We design and develop custom desktop applications that are perfectly aligned with your business processes, ensuring seamless integration and maximum efficiency.</p><br>
+                        <h5>Unparalleled Expertise</h5><br>
+                        <p>With years of experience in the industry, our developers possess deep technical knowledge and expertise in the latest technologies and frameworks. We stay ahead of the curve, so you can rest assured that your application will be built using the best practices and the most advanced tools available.</p><br>
+                        <h5>User-Centric Design</h5><br>
+                        <p>A successful application is one that is not only functional but also intuitive and easy to use. We place a strong emphasis on user experience (UX) and user interface (UI) design. Our applications are designed to be visually appealing, responsive, and user-friendly, ensuring that your employees and customers can navigate and use them with ease.</p><br>
+                        <h5>Scalability and Performance</h5><br>
+                        <p>As your business grows, your application needs to scale with it. Our solutions are built to handle increasing workloads without compromising on performance. We use robust architectures and optimization techniques to ensure that your application remains fast, reliable, and scalable, no matter how large your user base becomes.</p><br>
+                        <h5>Security and Compliance</h5><br>
+                        <p>In an age where data breaches are all too common, security is our top priority. We implement stringent security measures to protect your sensitive data and ensure compliance with industry standards and regulations. Your application will be equipped with advanced security features to safeguard your business and customer information.</p><br>
+                        <h5>Dedicated Support and Maintenance</h5><br>
+                        <p>Our commitment to you doesn’t end with the delivery of your application. We provide ongoing support and maintenance to ensure that your application runs smoothly at all times. Our dedicated support team is always ready to assist you with any issues or updates, giving you peace of mind and allowing you to focus on your core business activities.</p><br>
+                        <h5>Proven Track Record</h5><br>
+                        <p>We have a proven track record of delivering successful desktop applications to a wide range of clients across various industries. Our portfolio speaks for itself, showcasing our ability to deliver high-quality, impactful solutions that drive business success.</p><br>
+                        <h5>Competitive Pricing</h5><br>
+                        <p>We offer competitive pricing without compromising on quality. Our transparent pricing model ensures that you get the best value for your investment, with no hidden costs or surprises.</p><br>
+                        <p>Take the first step towards transforming your business with a powerful desktop application. Contact us today to discuss your project and discover how Your Company can help you achieve your goals.</p><br>
+                    </div>
+
+                </div>
+                <div class="carousel-button">
+                    <button class="cb-left cb-both" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="cb-right cb-both" onclick="plusDivs(1)">&#10095;</button>
+                </div>
             </div>
-            <div class="content2 grid-content">
-                content2
+            <div class="content2">
+            </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+            </script>
             </div>
             <div class="content3 grid-content">
-                content3
-            </div>
-            <div class="content4 grid-content">
-                content4
+                <h3>News</h3>
+                <div class="news-items">
+                    <img class="news-pics" src="./assets/pictures/news1waymo.jpg" alt="waymo car">
+                    <h4>Waymo self-driving car runs red light raising safety concerns</h4><br>
+                    <p class="timestamp">8 July 2024</p>
+                    <p>Waymo explained that the vehicle encountered inconsistent construction signage and temporarily entered an unoccupied oncoming lane.</p>
+                </div>
+                <div class="news-items">
+                    <img class="news-pics" src="./assets/pictures/news2chips.jpg" alt="waymo car">
+                    <h4>Former ASML CEO criticises US-China chip disputes</h4><br>
+                    <p class="timestamp">8 July 2024</p>
+                    <p>Wennink expressed concern that these ideological conflicts disrupted the balance of stakeholder interests and forecasted that geopolitical tensions could persist for decades.</p>
+                </div>
+                <div class="news-items">
+                    <img class="news-pics" src="./assets/pictures/news3x.jpg" alt="waymo car">
+                    <h4>Elon Musk seeks dismissal of lawsuit over delayed Twitter stake disclosure</h4><br>
+                    <p class="timestamp">8 July 2024</p>
+                    <p>The case, led by an Oklahoma public pension fund, is being heard in a Manhattan federal court, with US District Judge Andrew Carter previously refusing to dismiss it.</p>
+                </div>
+                <div class="news-items">
+                    <img class="news-pics" src="./assets/pictures/news4aiscam.jpg" alt="waymo car">
+                    <h4>Morgan Freeman responds to AI voice scam on TikTok</h4><br>
+                    <p class="timestamp">8 July 2024</p>
+                    <p>The video falsely claimed Freeman narrated a day-in-the-life post for his 'niece,' misleading many despite the creator's use of the 'ai' hashtag.</p>
+                </div>
             </div>
         </section>
     </main>
+    <section class="section-container">
+        <h2>Our Company</h2>
+        <h3>About US</h3>
+        <h3>Business</h3>
+        <h3>Achievements</h3>
+        <h2>Contact</h2>
+        <h3>Location</h3>
+        <h3>Social Media</h3>
+        <h3>Offline Support</h3>
+
+    </section>
     <footer>
         <h2>footer</h2>
         <div>
@@ -140,6 +260,5 @@
             </div>
         </div>
     </footer>
-    
 </body>
 </html>
