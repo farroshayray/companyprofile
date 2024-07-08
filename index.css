@@ -1,6 +1,9 @@
 :root {
     --color1 : black;
     --colortransparent : rgba(0, 0, 0, 0) ;
+    --colortextday : navy;
+    --colornavbutton : rgb(2, 2, 72);
+    --colornavbuttonhover : rgba(0, 33, 71, 0.721);
 }
 * {
     border-width: 0.10px;
@@ -15,15 +18,15 @@ body {
 }
 /* nav header */
 .first-logo {
-    width: 8vw;
+    width: 5em;
     height:fit-content ;
     margin-left: 2vw;
 }
 .nav-header {
     display: flex;
     justify-content: space-between;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    margin-top: 1vw;
+    align-items: center;
 }
 div > .nav-center {
     display: flex;
@@ -34,10 +37,41 @@ nav > .dropdown {
 }
 div.dropdown {
     display: flex;
+    padding: 0 1.5vw 0 1.5vw;
 }
 .dropdown-content {
     position: absolute;
+    border-radius: 1vw;
     margin-top: 3vw;
+    background-color: rgba(91, 94, 94, 0.381);
+    padding: 1.3vw;
+    z-index: 1;
+    
+}
+.dropdown-content > a {
+    color: white;
+    border-radius: 1vw;
+    background-color: var(--colornavbutton);
+    margin-top: 0.1vw;
+    padding: 0.5vw;
+    text-decoration: none;
+}
+.dropdown-content > a:hover {
+    background-color: var(--colornavbuttonhover);
+}
+.dropdown-div {
+    align-content: end;
+}
+.arrow-down {
+    width: 1vw;
+    height: 1vw;
+    padding-left: 0.5vw;
+}
+.dropbtn{
+    font-size: 1.2em;
+    text-align: center;
+    align-content: center;
+    color: var(--colortextday);
 }
 div > a {
     display: flex;
@@ -46,12 +80,36 @@ div > a {
 .right-nav {
     margin-right: 2vw;
 }
+.right-nav-button {
+    width: 12vw;
+    height: 6vw;
+    border-radius: 3vw;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    color: white;
+    font-size: 1em;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.right-nav-button > div {
+    color: rgb(255, 255, 255);
+    width: 75%;
+    margin-left: 3%;
+    font-size:1em;
+    background-color: transparent;
+}
+.enter-button1 {
+    width: 15%;
+    background-color: transparent;
+}
 /* header container */
 .second-header {
     text-align: center;
     align-content: center;
     width: auto;
     height: 62vw;
+    position: relative;
 }
 .second-header > h1 {
     font-size: 3em;
@@ -62,7 +120,31 @@ div > a {
 }
 .second-header > p {
     font-size: 1.5em;
-    color: navy;
+    color: var(--colortextday);
+}
+.headerbtn-par {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+}
+.headerbtn-child {
+    width: 200px;
+    height: 60px;
+    border-radius: 180px;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    color: white;
+    border-width: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.headerbtn-child > div {
+    width: 75%;
+    background-color: transparent;
+}
+.enter-button2 {
+    background-color: transparent;
 }
 /* main container */
 .main-container {
@@ -110,4 +192,19 @@ div > a {
     flex-direction: column;
     width: 25%;
     float: left;
+}
+@media only screen and (max-width: 768px){
+* {
+    background-color: black;
+}
+}
+@media only screen and (max-width: 425px){
+* {
+    background-color: red;
+}    
+}
+@media only screen and (max-width: 375px){
+* {
+    background-color: gray;
+}
 }
