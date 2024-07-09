@@ -44,8 +44,8 @@
                         <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
                     </div>
                     <div class="dropdown-content" id="under-nav3" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
-                        <a href="#">Location</a>
-                        <a href="#">Social Media</a>
+                        <a href="#location">Location</a>
+                        <a href="#socialmedia">Social Media</a>
                         <a href="#">Office Support</a>
                     </div>
                 </div>
@@ -55,9 +55,9 @@
                         <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
                     </div>
                     <div class="dropdown-content" id="under-nav4" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
-                        <a href="#">sadgdsasd</a>
-                        <a href="#">iOS</a>
-                        <a href="#">Web</a>
+                        <a href="#">I have an account</a>
+                        <a href="#">Log In With Google</a>
+                        <a href="#">Sign Up</a>
                     </div>
                 </div>
             </nav>
@@ -246,70 +246,93 @@
                 </div>
             </div>
         </div>
-    
-        <h3>Achievements</h3>
-        <div class="achievement" id="achievement">
-            <div class="content-achievement">
-                <img src="./assets/pictures/medal1.png" alt="best medal">
-                <h5>Award-Winning Applications</h5>
-                <ul>
-                    <li>Best Mobile App of the Year (2022): Our flagship mobile app received the prestigious "Best Mobile App of the Year" award for its innovative design and exceptional user experience.</li>
-                    <li>Top Enterprise Solution Award (2023): Our enterprise software was recognized for its transformative impact on business operations and efficiency.</li>
-                </ul>
-            </div>
-            <div class="content-achievement">
-                <img src="./assets/pictures/medal1.png" alt="best medal">
-                <h5>Innovative Technology Awards</h5>
-                <ul>
-                    <li>AI Excellence Award (2023): Our advancements in artificial intelligence and machine learning were honored with the AI Excellence Award, highlighting our leadership in the field.</li>
-                    <li>IoT Innovation Award (2022): Our IoT solutions earned the IoT Innovation Award for creating smarter, more connected environments.</li>
-                </ul>
+        <div class="achievement-container">
+            <h3>Achievements</h3>
+            <p>At Farro Tech, we pride ourselves on our track record of innovation and excellence. Our journey has been marked by numerous milestones and accolades that reflect our commitment to pushing the boundaries of technology. Here are some of our most notable achievements:</p>
+            <div class="achievement" id="achievement">
+                <div class="content-achievement">
+                    <img src="./assets/pictures/medal1.png" alt="best medal">
+                    <h5>Award-Winning Applications</h5>
+                    <ul>
+                        <li>Best Mobile App of the Year (2022): Our flagship mobile app received the prestigious "Best Mobile App of the Year" award for its innovative design and exceptional user experience.</li><br>
+                        <li>Top Enterprise Solution Award (2023): Our enterprise software was recognized for its transformative impact on business operations and efficiency.</li>
+                    </ul>
+                </div>
+                <div class="content-achievement">
+                    <img src="./assets/pictures/medal1.png" alt="best medal">
+                    <h5>Innovative Technology Awards</h5>
+                    <ul>
+                        <li>AI Excellence Award (2023): Our advancements in artificial intelligence and machine learning were honored with the AI Excellence Award, highlighting our leadership in the field.</li><br>
+                        <li>IoT Innovation Award (2022): Our IoT solutions earned the IoT Innovation Award for creating smarter, more connected environments.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <h2>Contact</h2>
-        <h3>Location</h3>
-        <h3>Social Media</h3>
-        <h3>Offline Support</h3>
+        <div class="location-container" id="location">
+            <h3>Location</h3>
+            <p>Farro Tech operates from strategically located offices around the world, allowing us to serve our clients efficiently and effectively. Our global presence ensures that we can provide localized support while leveraging our global expertise to deliver innovative solutions.</p>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=batukuwung&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    <a href="https://embed-googlemap.com">embed google map</a>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <h2>footer</h2>
+    <footer class="footer-container">
         <div>
             <div class="footer-lists">
-                <div class="footer-inner">
-                    <span>
-                        Contact
-                    </span>
-                    <a href="#">Home</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Services</a>
-                    <a href="#">Projects</a>
+                <div class="footer1-parent">
+                    <div class="footer-inner footer1">
+                        <div class="footer1-img" id="socialmedia">
+                            <img src="./assets/pictures/companyLogo.png" alt="">
+                        </div>
+                        <p>You can visit our social media.</p>
+                        <div class="socmed-flex">
+                            <a href="https://www.google.com" class="socmed-content">
+                                <img src="./assets/pictures/instagram.png" alt="instagram">
+                            </a>
+                            <a href="https://www.google.com" class="socmed-content">
+                                <img src="./assets/pictures/facebook.png" alt="instagram">
+                            </a>
+                            <a href="https://www.google.com" class="socmed-content">
+                                <img src="./assets/pictures/twitterx.png" alt="instagram">
+                            </a>
+                            <a href="https://www.google.com" class="socmed-content">
+                                <img src="./assets/pictures/linkedin.png" alt="instagram">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-inner">
+                <div class="footer-inner footer2">
                     <span>
-                        title-list2
+                        Office Support
                     </span>
-                    <a href="#">Home</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Services</a>
-                    <a href="#">Projects</a>
+                    <a href="#">Call Center</a>
+                    <a href="#">Remote Assistance</a>
+                    <a href="#">On-Site Support</a>
+                    <a href="#">Training</a>
+                    <a href="#">Customer-Centric Approach</a>
+                    <a href="#">Responsiveness</a>
+                    <a href="#">Expertise</a>
+                    <a href="#">Helpdesk</a>
                 </div>
-                <div class="footer-inner">
+                <div class="footer-inner footer3">
                     <span>
-                        title-list3
+                        Features
                     </span>
-                    <a href="#">Home</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Services</a>
-                    <a href="#">Projects</a>
-                </div>
-                <div class="footer-inner">
-                    <span>
-                        title-list4
-                    </span>
-                    <a href="#">Home</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Services</a>
-                    <a href="#">Projects</a>
+                    <a href="#">AI Video</a>
+                    <a href="#">Cloud Computing</a>
+                    <a href="#">Web Apps</a>
+                    <a href="#">Android Apss</a>
+                    <a href="#">Desktop Apps</a>
+                    <a href="#">API's</a>
+                    <a href="#">Machine Learning</a>
+                    <a href="#">VR's</a>
+                    <a href="#">OTPs</a>
+                    <a href="#">Authenticator</a>
+                    <a href="#">AR</a>
+                    <a href="#">Animation</a>
                 </div>
             </div>
         </div>

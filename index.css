@@ -7,6 +7,7 @@
     --colortextdaywhite : rgb(211, 211, 211) ;
     --colornavbutton : rgb(2, 2, 72);
     --colornavbuttonhover : rgba(0, 33, 71, 0.721);
+    --colortransparentwhite : rgba(206, 206, 206, 0.568);
 }
 * {
     box-sizing: border-box;
@@ -25,6 +26,29 @@ h3 {font-size: 1.5em; margin-top: 1vw;}
 h4 {font-size: 1.3em; margin-top: 1vw;}
 h5 {font-size: 1.2em; margin-top: 1vw;}
 p {font-size: 1.1em;}
+body::-webkit-scrollbar {
+    width: 1.5vw;
+}
+body::-webkit-scrollbar-track {
+    border-radius: 5vw;
+    background-color: #ffffff00;
+}
+body::-webkit-scrollbar-track:hover {
+    background-color: #ffffff00;
+}
+body::-webkit-scrollbar-track:active {
+    background-color: #d2d2d200;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 5vw;
+    background-color: #d8212162;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #e8494962;
+}
+body::-webkit-scrollbar-thumb:active {
+    background-color: #5e2ecd84;
+}
 /* nav header */
 .first-logo {
     width: 7em;
@@ -74,12 +98,12 @@ div.dropdown {
     align-content: end;
 }
 .arrow-down {
-    width: 1vw;
-    height: 1vw;
+    width: 1.3vw;
+    height: 0.8vw;
     padding-left: 0.5vw;
 }
 .dropbtn{
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-align: center;
     align-content: center;
     color: var(--colortextday);
@@ -119,7 +143,8 @@ div > a {
     text-align: center;
     align-content: center;
     width: auto;
-    height: 62vw;
+    height: fit-content;
+    min-height: 62vw;
     position: relative;
     background-color: var(--colorbackgroundday);
 }
@@ -136,6 +161,7 @@ div > a {
 }
 .headerbtn-par {
     margin-top: 3vw;
+    margin-bottom: 3vw;
     display: flex;
     justify-content: center;
 }
@@ -168,7 +194,7 @@ div > a {
 }
 .main-container > h2 {
     text-align: center;
-    margin-top: 2vw;
+    padding-top: 2vw;
     color: var(--colortextdaywhite);
     font-size: 3em;
 }
@@ -332,7 +358,8 @@ ol {
     background-image: url(./assets/pictures/blackbackground.png.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vw;
+    min-height: 80vw;
+    height:fit-content;
     align-content: center;
 }
 .our-company {
@@ -394,15 +421,19 @@ ol {
     margin-right: 3vw;
     margin-bottom: 3vw;
     padding-bottom: 10vw;
+    min-height: fit-content;
 }
 .wwd {
     width: 100%;
-    height: 40vw;
-    background-color: rgba(206, 206, 206, 0.568);
+    min-height: 40vw;
+    height: fit-content;
+    background-color: var(--colortransparentwhite);
     text-align: center;
     align-content: center;
     border-radius: 3vw;
     box-sizing: border-box;
+    font-size: 1.5em;
+    padding: 0 0 1vw 0;
 }
 .wwd > img {
     width: 10vw;
@@ -427,12 +458,34 @@ ol {
 .wwd5 {
     grid-area: wwd5;
 }
+.achievement-container {
+    background-color: var(--colorbackgroundday);
+    min-height: 80vw;
+    height: fit-content;
+    padding-bottom: 3vw;
+    align-content: center;
+}
 .achievement {
     display: flex;
     justify-content: center;
 }
+.achievement-container > h3 {
+    text-align: center;
+    margin-bottom: 3vw;
+    font-size: 5em;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.achievement-container > p {
+    margin-bottom: 3vw;
+    text-align: center;
+    padding: 0 10vw 0 10vw;
+    font-size: 1.5em;
+}
 .content-achievement {
-    background-color:  rgba(150, 150, 150, 0.393);
+    background-color:  var(--colortransparentwhite);
     border-radius: 2vw;
     text-align: justify;
     width: 25%;
@@ -440,36 +493,144 @@ ol {
     margin-right: 5vw;
 }
 .content-achievement > ul {
-    margin: 1vw 1vw 1vw 2vw;
+    margin: 1vw 1vw 2vw 2vw;
 }
 .content-achievement > h5 {
-    margin-left: 1vw;
+    margin-left: 2vw;
 }
 .content-achievement > img {
     width: 50%;
     display: block;
     margin: 0 auto;
+    margin-top: 1vw;
     
 }
+.location-container {
+    background-image: url(./assets/pictures/blackbackgroundupdown.png);
+    padding: 0 0 3vw 0;
+    min-height: 60vw;
+    height: fit-content;
+    align-content: center;
+}
+.location-container > h3 {
+    font-size: 5em;
+    padding: 0 0 2vw 0;
+    text-align: center;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.location-container > p {
+    text-align: center;
+    padding: 0 10vw 5vw 10vw;
+    font-size: 1.5em;
+}
+.mapouter{
+    position:relative;
+    width:50%;
+    height:200px;
+    display: block;
+    margin: 0 auto;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none;
+    width:100%;
+    height:200px;
+}
+.gmap_iframe {
+    height:200px;
+    border-radius: 2vw;
+}
 /* footer-container */
+.footer-container {
+    background-color: var(--colorbackgroundday);
+    height: fit-content;
+    min-height: 70vw;
+    align-content: center;
+}
 .footer-lists {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
 }
 .footer-inner {
     display: flex;
     flex-direction: column;
-    width: 25%;
     float: left;
 }
+.footer1-parent {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.footer1 {
+
+}
+.footer1 > p {
+    text-align: center;
+    margin-top: 1vw;
+}
+.footer1-img > img{
+    width: 7vw;
+    display: block;
+    margin: 0 auto;
+}
+.socmed-flex {
+    display: flex;
+    margin-top: 1vw;
+    justify-content: center;
+}
+.socmed-content {
+    width: 3.5vw;
+    padding: 0 0.5vw 0 0.5vw;
+}
+.socmed-content:hover {
+    width: 3.9vw;
+}
+.footer-inner > span {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1vw;
+}
+.footer2 {
+    width: 25%;
+}
+.footer3 {
+    width: 25%;
+}
+.footer-inner > a {
+    text-decoration: none;
+    font-size: 1.1em;
+    padding-bottom: 1vw;
+    color: var(--colortextday1);
+}
+.footer-inner > a:hover {
+    color: navy;
+    font-size: 1.2em;
+}
 @media only screen and (max-width: 1024px){
+    .arrow-down {
+        width: 1.8vw;
+        height: 1.3vw;
+        align-content: center;
+    }
+    .content-achievement {
+        width: 35%;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    .content-achievement > ul {
+        margin: 1vw 2vw 2vw 3vw;
+    }
 }
 @media only screen and (max-width: 768px){
-* {
-    background-color: wheat;
-}
+    .right-nav {
+        display: none;
+    }
 }
 @media only screen and (max-width: 425px){
 * {
