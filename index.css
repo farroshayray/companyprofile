@@ -4,10 +4,12 @@
     --colorbackgroundday : rgb(234, 234, 234);
     --colortextday : navy;
     --colortextday1 : rgb(52, 52, 52) ;
+    --colortextdaywhite : rgb(211, 211, 211) ;
     --colornavbutton : rgb(2, 2, 72);
     --colornavbuttonhover : rgba(0, 33, 71, 0.721);
 }
 * {
+    box-sizing: border-box;
     /* border-width: 0.10px;
     border-color: red;
     border-style: solid; */
@@ -19,9 +21,9 @@ body {
     color: black;
     font-family: 'Roboto', sans-serif;
 }
-h3 {font-size: 1.5em;}
-h4 {font-size: 1.3em;}
-h5 {font-size: 1.2em;}
+h3 {font-size: 1.5em; margin-top: 1vw;}
+h4 {font-size: 1.3em; margin-top: 1vw;}
+h5 {font-size: 1.2em; margin-top: 1vw;}
 p {font-size: 1.1em;}
 /* nav header */
 .first-logo {
@@ -32,7 +34,7 @@ p {font-size: 1.1em;}
 .nav-header {
     display: flex;
     justify-content: space-between;
-    margin-top: 1vw;
+    padding-top: 1vw;
     align-items: center;
     background-color: var(--colorbackgroundday);
 }
@@ -163,6 +165,12 @@ div > a {
     color: rgb(43, 43, 43);
     background: #121FCF;
     background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+}
+.main-container > h2 {
+    text-align: center;
+    margin-top: 2vw;
+    color: var(--colortextdaywhite);
+    font-size: 3em;
 }
 .grid-container {
     display: grid;
@@ -314,6 +322,135 @@ ol {
     grid-area: content4;
     height: 100%;
 }
+/* section-container (about Us) */
+.section-container {
+    margin: 0;
+    background-color: var(--colorbackgroundday);
+}
+.first-company {
+    color: rgb(0, 0, 0);
+    background-image: url(./assets/pictures/blackbackground.png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vw;
+    align-content: center;
+}
+.our-company {
+    padding-top: 6vw;
+    font-size: 5em;
+    text-align: center;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.first-company > h3 {
+    font-size: 3em;
+    text-align: center;
+}
+.first-company > p {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0vw 10vw 1vw 10vw;
+}
+.first-company > h4 {
+    font-size: 2.5em;
+    text-align: center;
+}
+.first-company > .end-company1 {
+    margin-bottom: 6vw;
+}
+.what-we-do {
+    background-color: var(--colorbackgroundday);
+}
+.what-we-do > h4 {
+    margin-top: 10vw;
+    font-size: 5em;
+    text-align: center;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.what-we-do > p {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 10vw 0 10vw;
+}
+.wwd-content {
+    display: grid;
+    grid-template-areas: 
+    'wwd1 wwd1 wwd2 wwd2'
+    'wwd1 wwd1 wwd2 wwd2'
+    'wwd3 wwd3 wwd4 wwd4'
+    'wwd3 wwd3 wwd4 wwd4'
+    'wwdx wwd5 wwd5 wwdy'
+    'wwdx wwd5 wwd5 wwdy';
+    gap: 3vw;
+    border-radius: 1vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+    padding-bottom: 10vw;
+}
+.wwd {
+    width: 100%;
+    height: 40vw;
+    background-color: rgba(206, 206, 206, 0.568);
+    text-align: center;
+    align-content: center;
+    border-radius: 3vw;
+    box-sizing: border-box;
+}
+.wwd > img {
+    width: 10vw;
+    display: block;
+    margin: 0 auto;
+}
+.wwd > p {
+    margin: 1vw 3vw 0 3vw;
+}
+.wwd1 {
+    grid-area: wwd1;
+}
+.wwd2 {
+    grid-area: wwd2;
+}
+.wwd3 {
+    grid-area: wwd3;
+}
+.wwd4 {
+    grid-area: wwd4;
+}
+.wwd5 {
+    grid-area: wwd5;
+}
+.achievement {
+    display: flex;
+    justify-content: center;
+}
+.content-achievement {
+    background-color:  rgba(150, 150, 150, 0.393);
+    border-radius: 2vw;
+    text-align: justify;
+    width: 25%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.content-achievement > ul {
+    margin: 1vw 1vw 1vw 2vw;
+}
+.content-achievement > h5 {
+    margin-left: 1vw;
+}
+.content-achievement > img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    
+}
 /* footer-container */
 .footer-lists {
     box-sizing: border-box;
@@ -331,7 +468,7 @@ ol {
 }
 @media only screen and (max-width: 768px){
 * {
-    background-color: black;
+    background-color: wheat;
 }
 }
 @media only screen and (max-width: 425px){

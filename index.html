@@ -33,9 +33,9 @@
                         <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
                     </div>
                     <div class="dropdown-content" id="under-nav2" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
-                        <a href="#">About Us</a>
-                        <a href="#">Business</a>
-                        <a href="#">Achievement</a>
+                        <a href="#company">About Us</a>
+                        <a href="#company">Business</a>
+                        <a href="#achievement">Achievement</a>
                     </div>
                 </div>
                 <div class="dropdown" onmouseover="showContainer3()" onmouseout="hideContainer3()">
@@ -163,7 +163,6 @@
                         <p>We offer competitive pricing without compromising on quality. Our transparent pricing model ensures that you get the best value for your investment, with no hidden costs or surprises.</p><br>
                         <p>Take the first step towards transforming your business with a powerful desktop application. Contact us today to discuss your project and discover how Your Company can help you achieve your goals.</p><br>
                     </div>
-
                 </div>
                 <div class="carousel-button">
                     <button class="cb-left cb-both" onclick="plusDivs(-1)">&#10094;</button>
@@ -207,15 +206,70 @@
         </section>
     </main>
     <section class="section-container">
-        <h2>Our Company</h2>
-        <h3>About US</h3>
-        <h3>Business</h3>
+        <div class="first-company" id="company">
+            <h2 class="our-company">Our Company</h2><br>
+            <p></p><br>
+            <h3>About US</h3><br>
+            <p>Welcome to Farro Tech, where innovation meets excellence. At Farro Tech, we are dedicated to revolutionizing the world through cutting-edge technology and pioneering applications. Our team of passionate experts works tirelessly to push the boundaries of what is possible, delivering solutions that not only meet but exceed the expectations of our clients and users.</p><br>
+            <h4>Our Vision</h4><br>
+            <p>To become a global leader in technology, driving progress and creating value through innovative solutions that transform industries and improve lives.</p><br>
+            <h4>Our Mission</h4><br>
+            <p class="end-company1">To harness the power of technology to create applications and breakthroughs that solve real-world problems, enhance productivity, and foster sustainable growth.</p><br>
+        </div>
+        <div class="what-we-do">
+            <h4>What We Do</h4><br>
+            <div class="wwd-content">
+                <div class="wwd1 wwd">
+                    <img src="./assets/pictures/wwd1.png" alt="mobile aplications">
+                    <h5>Mobile Applications</h5>
+                    <p>User-friendly apps that bring convenience and efficiency to your fingertips.</p>
+                </div>
+                <div class="wwd2 wwd">
+                    <img src="./assets/pictures/wwd2.png" alt="Enterprise Solutions">
+                    <h5>Enterprise Solutions</h5>
+                    <p>Robust software to streamline operations and enhance business performance.</p>
+                </div>
+                <div class="wwd3 wwd">
+                    <img src="./assets/pictures/wwd3.png" alt="AI & Machine Learning">
+                    <h5>AI & Machine Learning</h5>
+                    <p>Intelligent systems that learn and adapt to deliver personalized experiences.</p>
+                </div>
+                <div class="wwd4 wwd">
+                    <img src="./assets/pictures/wwd4.png" alt="IoT Innovations">
+                    <h5>IoT Innovations</h5>
+                    <p>Connecting devices to create smarter environments and improve quality of life.</p>
+                </div>
+                <div class="wwd5 wwd">
+                    <img src="./assets/pictures/wwd5.png" alt="Cloud Computing">
+                    <h5>Cloud Computing</h5>
+                    <p>Scalable and secure cloud solutions to support your digital transformation journey.</p>
+                </div>
+            </div>
+        </div>
+    
         <h3>Achievements</h3>
+        <div class="achievement" id="achievement">
+            <div class="content-achievement">
+                <img src="./assets/pictures/medal1.png" alt="best medal">
+                <h5>Award-Winning Applications</h5>
+                <ul>
+                    <li>Best Mobile App of the Year (2022): Our flagship mobile app received the prestigious "Best Mobile App of the Year" award for its innovative design and exceptional user experience.</li>
+                    <li>Top Enterprise Solution Award (2023): Our enterprise software was recognized for its transformative impact on business operations and efficiency.</li>
+                </ul>
+            </div>
+            <div class="content-achievement">
+                <img src="./assets/pictures/medal1.png" alt="best medal">
+                <h5>Innovative Technology Awards</h5>
+                <ul>
+                    <li>AI Excellence Award (2023): Our advancements in artificial intelligence and machine learning were honored with the AI Excellence Award, highlighting our leadership in the field.</li>
+                    <li>IoT Innovation Award (2022): Our IoT solutions earned the IoT Innovation Award for creating smarter, more connected environments.</li>
+                </ul>
+            </div>
+        </div>
         <h2>Contact</h2>
         <h3>Location</h3>
         <h3>Social Media</h3>
         <h3>Offline Support</h3>
-
     </section>
     <footer>
         <h2>footer</h2>
@@ -223,7 +277,7 @@
             <div class="footer-lists">
                 <div class="footer-inner">
                     <span>
-                        title-list1
+                        Contact
                     </span>
                     <a href="#">Home</a>
                     <a href="#">Contact</a>
