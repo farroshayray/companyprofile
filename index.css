@@ -127,9 +127,8 @@ div > a {
 .right-nav-button {
     width: 12vw;
     height: 6vw;
-    border-radius: 3vw;
-    background: #121FCF;
-    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: #121fcf;
+    background: linear-gradient(to right, #121fcf9e 0%, #cf151272 100%);
     color: white;
     font-size: 1em;
     border: none;
@@ -390,7 +389,7 @@ ol {
 }
 .first-company {
     color: rgb(0, 0, 0);
-    background-image: url(./assets/pictures/blackbackground.png.png);
+    background-color: var(--colorbackgroundday);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 80vw;
