@@ -11,63 +11,68 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="nav-header">
-            <img src="./assets/pictures/companyLogo.png" alt="company logo" class="first-logo">
-            <nav class="nav-center">
-                <div class="dropdown" onmouseover="showContainer1()" onmouseout="hideContainer1()">
-                    <p class="dropbtn">Apps</p>
-                    <div class="dropdown-div">
-                        <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
-                    </div>
-                    <div class="dropdown-content" id="under-nav1" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
-                        <a href="#app-android">Android</a>
-                        <a href="#app-android">iOS</a>
-                        <a href="#app-android">Web</a>
-                        <a href="#app-android">Desktop</a>
-                    </div>
+    <header class="nav-header">
+        <img src="./assets/pictures/companyLogo.png" alt="company logo" class="first-logo">
+        <nav class="nav-center">
+            <div class="dropdown" onmouseover="showContainer1()" onmouseout="hideContainer1()">
+                <p class="dropbtn">Apps</p>
+                <div class="dropdown-div">
+                    <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
                 </div>
-                <div class="dropdown" onmouseover="showContainer2()" onmouseout="hideContainer2()">
-                    <p class="dropbtn">Company</p>
-                    <div class="dropdown-div">
-                        <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
-                    </div>
-                    <div class="dropdown-content" id="under-nav2" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
-                        <a href="#company">About Us</a>
-                        <a href="#company">Business</a>
-                        <a href="#achievement">Achievement</a>
-                    </div>
+                <div class="dropdown-content" id="under-nav1" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
+                    <a href="#app-android">Android</a>
+                    <a href="#app-android">iOS</a>
+                    <a href="#app-android">Web</a>
+                    <a href="#app-android">Desktop</a>
                 </div>
-                <div class="dropdown" onmouseover="showContainer3()" onmouseout="hideContainer3()">
-                    <p class="dropbtn">Contact</p>
-                    <div class="dropdown-div">
-                        <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
-                    </div>
-                    <div class="dropdown-content" id="under-nav3" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
-                        <a href="#location">Location</a>
-                        <a href="#socialmedia">Social Media</a>
-                        <a href="#">Office Support</a>
-                    </div>
-                </div>
-                <div class="dropdown" onmouseover="showContainer4()" onmouseout="hideContainer4()">
-                    <p class="dropbtn">Login</p>
-                    <div class="dropdown-div">
-                        <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
-                    </div>
-                    <div class="dropdown-content" id="under-nav4" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
-                        <a href="#">I have an account</a>
-                        <a href="#">Log In With Google</a>
-                        <a href="#">Sign Up</a>
-                    </div>
-                </div>
-            </nav>
-            <div class="right-nav">
-                <button onclick="scrollToMainContainer()" class="right-nav-button">
-                    <div>Get Started</div>
-                    <img src="./assets/pictures/icons8-enter-32.png" alt="enter icon" class="enter-button1">
-                </button>
             </div>
+            <div class="dropdown" onmouseover="showContainer2()" onmouseout="hideContainer2()">
+                <p class="dropbtn">Company</p>
+                <div class="dropdown-div">
+                    <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
+                </div>
+                <div class="dropdown-content" id="under-nav2" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
+                    <a href="#company">About Us</a>
+                    <a href="#company">Business</a>
+                    <a href="#achievement">Achievement</a>
+                </div>
+            </div>
+            <div class="dropdown" onmouseover="showContainer3()" onmouseout="hideContainer3()">
+                <p class="dropbtn">Contact</p>
+                <div class="dropdown-div">
+                    <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
+                </div>
+                <div class="dropdown-content" id="under-nav3" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
+                    <a href="#location">Location</a>
+                    <a href="#socialmedia">Social Media</a>
+                    <a href="#">Office Support</a>
+                </div>
+            </div>
+            <div class="dropdown" onmouseover="showContainer4()" onmouseout="hideContainer4()">
+                <p class="dropbtn">Login</p>
+                <div class="dropdown-div">
+                    <img src="./assets/pictures/icons8-triangle-16.png" alt="arrow-down" class="arrow-down">
+                </div>
+                <div class="dropdown-content" id="under-nav4" style="display: none" onmouseover="this.style.display='block'" onmouseout="this.style.display='none'">
+                    <a href="#">I have an account</a>
+                    <a href="#">Log In With Google</a>
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+        <div class="right-nav">
+            <button onclick="scrollToMainContainer()" class="right-nav-button">
+                <div>Get Started</div>
+                <img src="./assets/pictures/icons8-enter-32.png" alt="enter icon" class="enter-button1">
+            </button>
         </div>
+        <button class="ham-button">
+            <div class="ham-line"></div>
+            <div class="ham-line"></div>
+            <div class="ham-line"></div>
+        </button>
+    </header>
+    <header>
         <div class="second-header">
             <h1>Technology <br> Creation Platform</h1>
             <p>build all kinds of software and hardware technology <br> for your company</p>
