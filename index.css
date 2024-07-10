@@ -917,6 +917,24 @@ ol {
 }
 }
 @media only screen and (max-width: 425px){
+    .nav-header {
+        height: 15vw;
+    }
+    .ham-button1 {
+        height: 100%;
+        width: 15vw;
+    }
+    .ham-button {
+        height: 100%;
+        width: 15vw;
+    }
+    .ham-line {
+        width: 6vw;
+        height: 1.3vw;
+        background-color: var(--colorbackgroundday);
+        margin: 4% 0 4% 0;
+    }
+
     .second-header > h1 {
         font-size: 3em;
     }
@@ -968,7 +986,4 @@ ol {
     }
 }
 @media only screen and (max-width: 375px){
-* {
-    background-color: gray;
-}
 }
