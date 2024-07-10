@@ -967,6 +967,8 @@ ol {
         height: fit-content;
         min-height: 120vw;
         align-content: center;
+        padding-top: 20vw;
+        padding-bottom: 20vw;
     }
     .footer-lists {
         display: flex;
