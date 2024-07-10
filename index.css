@@ -858,6 +858,9 @@ ol {
 .wwd > p {
     font-size: 0.7em;
 }
+.wwd {
+    min-height: 60vw;
+}
 /* achievement */
 .achievement-container > h3 {
     font-size: 4em;
@@ -955,11 +958,20 @@ ol {
     .what-we-do > h4 {
         font-size: 3em;
     }
+    .wwd {
+        min-height: 60vw;
+    }
+    .wwd > p {
+        font-size: 0.5em;
+    }
     .achievement-container > h3 {
         font-size: 3em;
     }
     .content-achievement > ul {
         margin: 1vw 1vw 2vw 3.5vw;
+    }
+    .location-container {
+        background-image: url(./assets/pictures/blackbackgroundupdown426px.png);
     }
     .footer-container {
         background-color: var(--colorbackgroundday);
