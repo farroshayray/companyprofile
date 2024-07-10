@@ -11,9 +11,9 @@
 }
 * {
     box-sizing: border-box;
-    border-width: 0.10px;
+    /* border-width: 0.10px;
     border-color: red;
-    border-style: solid;
+    border-style: solid; */
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -370,6 +370,7 @@ ol {
     width: 90%;
     display: block;
     margin: 1vw auto;
+    border-radius: 1.3vw;
 }
 .news-items > p {
     text-align: justify;
@@ -529,8 +530,19 @@ ol {
 .content-achievement > ul {
     margin: 1vw 1vw 2vw 2vw;
 }
+.content-achievement > ul >li {
+    font-size: 1.1em;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 1vw;
+}
+.content-achievement > ul > p {
+    font-size: 1em;
+}
 .content-achievement > h5 {
+    font-size: 1.4em;
     margin-left: 2vw;
+    text-align: left;
 }
 .content-achievement > img {
     width: 50%;
@@ -762,8 +774,8 @@ ol {
     width: 6vw;
 }
 /* main container */
-.content1-container {
-
+.main-container > h2 {
+    font-size: 2em;
 }
 .content1 {
     position: relative;
@@ -794,28 +806,6 @@ ol {
 .app-carousel > ol > li {
     margin-left: 2vw;
 }
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 2vw;
-}
-.cb-both {
-    background-color: rgba(255, 255, 255, 0.164);
-    border-radius: 1vw;
-    border-style: none;
-    color: wheat;
-}
-.cb-left {
-    width: 3vw;
-    height: 5vw;
-}
-.cb-right {
-    width: 3vw;
-    height: 5vw;
-}
 .content2 {
     display: none;
 }
@@ -837,12 +827,7 @@ ol {
     padding: 1vw 1vw 1vw 1vw;
 }
 .news-items > h4 {
-    font-size: 1.1em;
-}
-.news-pics {
-    width: 90%;
-    display: block;
-    margin: 1vw auto;
+    font-size: 1em;
 }
 .news-items > p {
     text-align: justify;
@@ -853,6 +838,82 @@ ol {
 }
 .content4 {
     display: none;
+}
+/* company (section-container) */
+.our-company {
+    font-size: 4em;
+}
+.first-company > h3 {
+    font-size: 2.5em;
+}
+.first-company > p {
+    font-size: 1.2em;
+}
+/* what we do */
+.what-we-do > h4 {
+    font-size: 4em;
+}
+.wwd > h5 {
+    font-size: 1em;
+}
+.wwd > p {
+    font-size: 0.7em;
+}
+/* achievement */
+.achievement-container > h3 {
+    font-size: 4em;
+}
+.achievement-container > p {
+    font-size: 1.2em;
+}
+.content-achievement {
+    margin: 0 1vw 0 1vw;
+    width: 45%;
+}
+.content-achievement > ul {
+    margin: 1vw 1vw 2vw 2vw;
+}
+.content-achievement > ul >li {
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: left;
+}
+.content-achievement > ul > p {
+    font-size: 0.8em;
+}
+.content-achievement > h5 {
+    font-size: 1.1em;
+    margin-left: 2vw;
+    text-align: left;
+}
+
+/* location */
+.location-container > h3 {
+    font-size: 4em;
+}
+.location-container > p {
+    font-size: 1.2em;
+}
+/* footer */
+.footer1-parent {
+    width: 40%;
+}
+.footer1-img > img {
+    width: 20vw;
+}
+.socmed-content {
+    width: 7vw;
+}
+.socmed-content:hover {
+    width: 7.5vw;
+}
+.footer2 {
+    margin-left: 2vw;
+    width: fit-content;
+}
+.footer3 {
+    margin-left: 2vw;
+    width: fit-content;
 }
 }
 @media only screen and (max-width: 425px){
