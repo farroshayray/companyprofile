@@ -917,9 +917,55 @@ ol {
 }
 }
 @media only screen and (max-width: 425px){
-* {
-    background-color: red;
-}    
+    .second-header > h1 {
+        font-size: 3em;
+    }
+    .our-company {
+        font-size: 3em;
+    }
+    .first-company > h3 {
+        font-size: 2em;
+    }
+    .what-we-do > h4 {
+        font-size: 3em;
+    }
+    .achievement-container > h3 {
+        font-size: 3em;
+    }
+    .footer-container {
+        background-color: var(--colorbackgroundday);
+        height: fit-content;
+        min-height: 120vw;
+        align-content: center;
+    }
+    .footer-lists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer1-parent {
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+        width: fit-content
+    }
+    .footer-inner {
+        text-align: center;
+        margin-bottom: 5vw;
+    }
+    .footer1-img > img {
+        width: 35vw;
+    }
+    .socmed-flex {
+    }
+    .socmed-content {
+        width: fit-content;
+    }
+    .socmed-content > img {
+        width: 10vw;
+    };
+    .footer1 {
+        
+    }
 }
 @media only screen and (max-width: 375px){
 * {
