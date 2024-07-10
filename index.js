@@ -61,3 +61,14 @@ function carousel() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000); // Change image every 2 seconds
     }
+
+// ham button
+
+function toggleHamOpened() {
+    var hamOpened = document.querySelector('.ham-opened');
+    if (hamOpened.style.display === 'block') {
+        hamOpened.style.display = 'none';
+    } else {
+        hamOpened.style.display = 'block';
+    }
+}
