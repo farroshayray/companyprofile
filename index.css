@@ -86,7 +86,7 @@ div.dropdown {
     position: absolute;
     border-radius: 1vw;
     margin-top: 3vw;
-    background-color: rgba(91, 94, 94, 0.381);
+    background-color: var(--colortransparentwhite);
     padding: 1.3vw;
     z-index: 1;
     
