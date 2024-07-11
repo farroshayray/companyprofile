@@ -8,8 +8,9 @@ This project is a web application that showcases the process of building a Compa
 `git clone <remote repository>`
 2. Make new file named `index.html` 
 3. Start the development using `html 5` markup language.
+<br><br><br>
+## Processes
 
-## Screenshots
 ### Stage #1: Creating HTML Content Using Semantic Elements
 1. In building this website, I first created the initial code for the html:5 language initiation <br>
 ```html
@@ -30,6 +31,7 @@ This project is a web application that showcases the process of building a Compa
 4. I use the second `<header>` to create the first sentence in the web to separate it during styling.
 5. In completing this project I separated `<main>` from `<section>` because they have different functions in this content.
 6. Lastly I created `<footer>` at the bottom to place various content containing additional information and other ranges that can be accessed by users
+<br><br><br>
 
 
 ### Stage #2: Styling
@@ -168,21 +170,53 @@ I use `display: flex` to set the layout for the footer, and I apply flex to the 
 ![Footer Web](./screenshots/stage%202.7%20footer%20web.png) <br>
 on the mobile display I changed the overall flex orientation to `flex-direction: column` to support the mobile display so that the text displayed is not too small when read <br>
 ![Footer Mobile](./screenshots/stage%202.7.a%20footer%20mobil.png)
-
+<br><br><br>
 
 
 ### Stage #3: Deployment
-This deployment I will push to the GitHub repository, connect it using Netlify and use a subdomain purchased via Niagahoster <br>
+This deployment I will push to the [Git Hub](https://github.com) repository, connect it using [Netlify](https://netlify.com) and use a subdomain purchased via [Niagahoster](https://niagahoster.com) <br>
 1. Push Project to Remote Repository
 - open the terminal, it is recommended to use the code editor directly to make it faster
-- `git status` untuk mengecheck apa saja yang sudah kita kerjakan atau kita tambahkan
-
-![Contact Form](screenshots/contact_form.png)
-
+- `git status` to check what we have done or added
+![Terminal](./screenshots/stage%203.1%20open%20terminal-git%20status.png)
+- Add the files to be committed using `git add <file name>`
+- When all files have been included with `git add` then commit using `git commit -m '<commit comment>'`
+![add and commit](./screenshots/stage%203.2%20add%20and%20commit.png)
+- push the origin to main branch on github repository using `git push origin main`
+![push repository](./screenshots/stage%203.3%20push%20to%20github.png)
+- Push Finish
+2. Searching For Domain <br>
+- Sign Up/ Login [Niagahoster](https://niagahoster.com)
+- Click domain, and then add new domain. This section will leads you to creat new domain by typing custom domain <br>
+![niagahoster domain](./screenshots/stage%203.4.1%20niaga%20hoster.png)
+- if your custom domain is available, you can pay for it
+- your domain is ready
+3. Setting deployment
+- open [Niagahoster](https://niagahoster.com) 
+- manage your new domain by copying DNS Nameserver
+![Copy DNS](./screenshots/stage%203.4.2%20copy%20dns%20nameserver.png)
+- open and Login to [Netlify](https://netlify.com)
+- click domain, and add or register domain
+![register domain](./screenshots/stage%203.4.3.1%20register%20domain.png)
+- paste the DNS Nameserver 
+![Paste DNS](./screenshots/stage%203.4.3.2%20paste%20dns%20nameserver.png)
+- make sure the domain SSL is certified
+![SSL certified](./screenshots/stage%203.4.5.%20make%20sure%20SSL%20certified.png)
+- the deployment process is finish, you can open on web your new domain.
+<br><br><br>
 ## Dependencies
-- fonts
-- maps
-- 
+- fonts (Roboto)
+```html
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+```
+- maps (google map)
+```html
+<iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=batukuwung&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+</iframe>
+<a href="https://embed-googlemap.com" title="google map">embed google map</a>
+```
 
 ## Design Choices
 - Chose a minimalist design to focus on content.
