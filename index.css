@@ -56,7 +56,7 @@ body::-webkit-scrollbar-thumb:active {
     margin-left: 2vw;
 }
 .first-logo {
-    width: 20vw;
+    width: 11vw;
     height:fit-content ;
 }
 .nav-header {
@@ -919,6 +919,10 @@ ol {
 }
 }
 @media only screen and (max-width: 425px){
+    .first-logo {
+        width: 20vw;
+        height:fit-content ;
+    }
     .nav-header {
         height: 15vw;
     }
