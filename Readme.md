@@ -2,7 +2,7 @@
 # Project Milestone 1
 
 ## Description
-This project is a web application that showcases the process of building a Company Profile page. It includes different stages of development with screenshots to illustrate the progression.
+This project is a web application that showcases the process of building a Company Profile page. It includes different stages of development with screenshots to illustrate the progression of [Company Profile](https://milestone1.nurray.my.id)
 
 ## Setup Instructions
 1. Clone the repository to your local machine using Git Bash. <br>
