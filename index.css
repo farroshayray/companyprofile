@@ -22,6 +22,9 @@ body {
     color: var(--colortextday);
     font-family: 'roboto', sans-serif;
     background-color: var(--colorbackgroundday);
+    animation-name: turn-day;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
 }
 
 h3 {font-size: 1.5em; margin-top: 1vw;}
@@ -174,6 +177,17 @@ div > a {
 .night-mode {
     background-color: black;
     color: rgb(173, 173, 173);
+    animation-name: turn-night;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes turn-night {
+    0% {background-color: var(--colorbackgroundday);}
+    100% {background-color: black;}    
+}
+@keyframes turn-day {
+    0% {background-color: black;}
+    100% {background-color: var(--colorbackgroundday);}    
 }
 .night-mode a {
     background-color: black;
