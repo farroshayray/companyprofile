@@ -2,7 +2,7 @@
     --color1 : black;
     --colortransparent : rgba(0, 0, 0, 0) ;
     --colorbackgroundday : rgb(234, 234, 234);
-    --colortextday : navy;
+    --colortextday : rgba(0, 33, 71, 0.721);
     --colortextday1 : rgb(52, 52, 52) ;
     --colortextdaywhite : rgb(211, 211, 211) ;
     --colornavbutton : rgb(2, 2, 72);
@@ -19,9 +19,11 @@
     scroll-behavior: smooth;
 }
 body {
-    color: black;
-    font-family: 'Roboto', sans-serif;
+    color: var(--colortextday);
+    font-family: 'roboto', sans-serif;
+    background-color: var(--colorbackgroundday);
 }
+
 h3 {font-size: 1.5em; margin-top: 1vw;}
 h4 {font-size: 1.3em; margin-top: 1vw;}
 h5 {font-size: 1.2em; margin-top: 1vw;}
@@ -54,6 +56,7 @@ body::-webkit-scrollbar-thumb:active {
     height: fit-content;
     width: fit-content;
     margin-left: 2vw;
+    
 }
 .first-logo {
     width: 11vw;
@@ -65,7 +68,6 @@ body::-webkit-scrollbar-thumb:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:  rgba(234, 234, 234, 0.47);
     backdrop-filter: blur(5px);
     position: sticky;
     top: 0;
@@ -115,7 +117,6 @@ div.dropdown {
     font-size: 1.4em;
     text-align: center;
     align-content: center;
-    color: var(--colortextday);
 }
 div > a {
     display: flex;
@@ -169,6 +170,92 @@ div > a {
 .ham-opened {
     display: none;
 }
+ /* slider start */
+ .night-mode {
+    background-color: black;
+    color: rgb(173, 173, 173);
+}
+.night-mode a {
+    background-color: black;
+    color: rgb(173, 173, 173);
+}
+.night-mode .wwd {
+    background-color: rgba(29, 0, 122, 0.498);
+}
+.night-mode .content-achievement {
+    background-color: rgba(29, 0, 122, 0.498);
+}
+a {
+    color: var(--colortextday);
+}
+ div.switch-mode {
+    display: flex;
+    margin-left: 2vw;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--colornavbuttonhover);
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 0;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--colorbackgroundday);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: #454545;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  span.slider-text {
+    color: #a39d9d;
+  }
+  .side-text-slider {
+    align-content: center;
+    margin-left: 1vw;
+  }
+
+  /* slider end */
 /* header container */
 .second-header {
     text-align: center;
@@ -178,7 +265,7 @@ div > a {
     height: fit-content;
     min-height: 62vw;
     position: relative;
-    background-color: var(--colorbackgroundday);
+    /* background-color: var(--colorbackgroundday); */
 }
 .second-header > h1 {
     font-size: 5em;
@@ -189,7 +276,6 @@ div > a {
 }
 .second-header > p {
     font-size: 2.5em;
-    color: var(--colortextday);
 }
 .headerbtn-par {
     margin-top: 3vw;
@@ -385,11 +471,8 @@ ol {
 /* section-container (about Us) */
 .section-container {
     margin: 0;
-    background-color: var(--colorbackgroundday);
 }
 .first-company {
-    color: rgb(0, 0, 0);
-    background-color: var(--colorbackgroundday);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 80vw;
@@ -422,7 +505,6 @@ ol {
     margin-bottom: 6vw;
 }
 .what-we-do {
-    background-color: var(--colorbackgroundday);
 }
 .what-we-do > h4 {
     margin-top: 10vw;
@@ -493,7 +575,6 @@ ol {
     grid-area: wwd5;
 }
 .achievement-container {
-    background-color: var(--colorbackgroundday);
     min-height: 80vw;
     height: fit-content;
     padding-bottom: 3vw;
@@ -590,7 +671,6 @@ ol {
 }
 /* footer-container */
 .footer-container {
-    background-color: var(--colorbackgroundday);
     height: fit-content;
     min-height: 70vw;
     align-content: center;
@@ -651,10 +731,8 @@ ol {
     text-decoration: none;
     font-size: 1.1em;
     padding-bottom: 1vw;
-    color: var(--colortextday1);
 }
 .footer-inner > a:hover {
-    color: navy;
     font-size: 1.2em;
 }
 @media only screen and (max-width: 1024px){
@@ -679,7 +757,6 @@ ol {
         display: flex;
         justify-content:space-between;
         align-items: center;
-        background-color:  rgba(234, 234, 234, 0.47);
         backdrop-filter: blur(5px);
         position: sticky;
         top: 0;
@@ -713,26 +790,14 @@ ol {
         background-color: #00065d;
         padding: 1vw 0 1vw 1vw;
     }
-    .second-header {
-    text-align: center;
-    padding-top: 8vw;
-    align-content: center;
-    width: auto;
-    height: fit-content;
-    min-height: 62vw;
-    position: relative;
-    background-color: var(--colorbackgroundday);
-}
+   
 .second-header > h1 {
     font-size: 5em;
-    background: #121FCF;
-    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .second-header > p {
     font-size: 2.5em;
-    color: var(--colortextday);
 }
 /* second header */
 .second-header {
@@ -743,7 +808,6 @@ ol {
     height: fit-content;
     min-height: 62vw;
     position: relative;
-    background-color: var(--colorbackgroundday);
 }
 .second-header > h1 {
     font-size: 4em;
@@ -978,7 +1042,6 @@ ol {
         background-image: url(./assets/pictures/blackbackgroundupdown426px.png);
     }
     .footer-container {
-        background-color: var(--colorbackgroundday);
         height: fit-content;
         min-height: 120vw;
         align-content: center;
