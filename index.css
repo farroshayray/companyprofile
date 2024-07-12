@@ -23,7 +23,7 @@ body {
     font-family: 'roboto', sans-serif;
     background-color: var(--colorbackgroundday);
     animation-name: turn-day;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
 }
 
@@ -178,7 +178,7 @@ div > a {
     background-color: black;
     color: rgb(173, 173, 173);
     animation-name: turn-night;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
 }
 @keyframes turn-night {
