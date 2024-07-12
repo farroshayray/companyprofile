@@ -1,3 +1,25 @@
+ // Add script to save toggle switch state in local storage
+ document.addEventListener('DOMContentLoaded', function() {
+    var userMode = localStorage.getItem('mode');
+    if (userMode === 'night') {
+        document.body.classList.add('night-mode');
+        document.getElementById('mode-text').textContent = 'Night Mode';
+        document.getElementById('mode-toggle').checked = true; // Set toggle switch to checked
+    }
+
+    document.getElementById('mode-toggle').addEventListener('click', function() {
+        document.body.classList.toggle('night-mode');
+        var modeText = document.getElementById('mode-text');
+        if (document.body.classList.contains('night-mode')) {
+            modeText.textContent = 'Night Mode';
+            localStorage.setItem('mode', 'night');
+        } else {
+            modeText.textContent = 'Day Mode';
+            localStorage.setItem('mode', 'day');
+        }
+    });
+});
+
 
 // JavaScript function to show the container when hovering over "Apps"
 function showContainer1() {
