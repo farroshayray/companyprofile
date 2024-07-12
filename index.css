@@ -153,7 +153,7 @@ div > a {
 .ham-button {
     width: 9vw;
     height: 100%;
-    background-color: #000548;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,7 +164,7 @@ div > a {
 .ham-line {
     width: 3.5vw;
     height: 0.8vw;
-    background-color: var(--colorbackgroundday);
+    background-color: var(--colornavbutton);
     margin: 4% 0 4% 0;
 }
 .ham-opened {
@@ -189,8 +189,8 @@ div > a {
     background: #121FCF;
     background: linear-gradient(to right, #121fcf6c 0%, #cf151262 100%);
 }
-.night-mode .ham-button {
-    background-color: transparent;
+.night-mode .ham-line {
+    background-color: var(--colortextdaywhite);
 }
 a {
     color: var(--colortextday);
@@ -1008,7 +1008,6 @@ ol {
     .ham-line {
         width: 6vw;
         height: 1.3vw;
-        background-color: var(--colorbackgroundday);
         margin: 4% 0 4% 0;
     }
     .ham-opened {
