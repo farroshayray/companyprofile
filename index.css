@@ -185,6 +185,13 @@ div > a {
 .night-mode .content-achievement {
     background-color: rgba(29, 0, 122, 0.498);
 }
+.night-mode .main-container {
+    background: #121FCF;
+    background: linear-gradient(to right, #121fcf6c 0%, #cf151262 100%);
+}
+.night-mode .ham-button {
+    background-color: transparent;
+}
 a {
     color: var(--colortextday);
 }
@@ -230,7 +237,7 @@ a {
     transition: .4s;
   }
   input:checked + .slider {
-    background-color: #454545;
+    background-color: rgba(255, 255, 255, 0.388);
   }
   
   input:checked + .slider:before {
