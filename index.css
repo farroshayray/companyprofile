@@ -171,7 +171,7 @@ div > a {
     display: none;
 }
  /* slider start */
- .night-mode {
+.night-mode {
     background-color: black;
     color: rgb(173, 173, 173);
 }
@@ -192,10 +192,20 @@ div > a {
 .night-mode .ham-line {
     background-color: var(--colortextdaywhite);
 }
+.night-mode::-webkit-scrollbar-thumb {
+    border-radius: 5vw;
+    background-color: #ebebeb62;
+}
+.night-mode::-webkit-scrollbar-thumb:hover {
+    background-color: #f7f7f762;
+}
+.night-mode::-webkit-scrollbar-thumb:active {
+    background-color: #ffffff84;
+}
 a {
     color: var(--colortextday);
 }
- div.switch-mode {
+div.switch-mode {
     display: flex;
     margin-left: 2vw;
 }
