@@ -224,3 +224,134 @@ This deployment I will push to the [Git Hub](https://github.com) repository, con
 - Used CSS media query for responsive layout.
 - Ham button on nav bar
 - CSS animation using `@frame` on main container
+<br><br><br>
+
+### New Updated Feature !!
+1. Night Mode <br>
+change the display from light mode to dark mode and save it in local web storage
+![Night Mode](./screenshots/stage%204.1%20updated%20feature%20-%20night%20mode.png) <br>
+
+- make new div for switch mode toggle
+```html
+<div class="switch-mode">
+    <label class="switch">
+        <input type="checkbox" id="mode-toggle">
+        <span class="slider round"></span>
+    </label>
+    <div class="side-text-slider">
+        <span class="slider-text" id="mode-text">Day Mode</span>
+    </div>
+</div>
+```
+- style the toggle switch button
+```css
+div.switch-mode {
+    display: flex;
+    margin-left: 2vw;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--colornavbuttonhover);
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 0;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--colorbackgroundday);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: rgba(255, 255, 255, 0.388);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {border-radius: 34px;}
+  .slider.round:before {border-radius: 50%;}
+  span.slider-text {color: #a39d9d;}
+  .side-text-slider {
+    align-content: center;
+    margin-left: 1vw;
+  }
+```
+- make the toggle works with `javascript` <br>
+and save the last option (day/night mode) on local storage <br>
+```javascript
+ document.addEventListener('DOMContentLoaded', function() {
+    var userMode = localStorage.getItem('mode');
+    if (userMode === 'night') {
+        document.body.classList.add('night-mode');
+        document.getElementById('mode-text').textContent = 'Night Mode';
+        document.getElementById('mode-toggle').checked = true; // Set toggle switch to checked
+    }
+
+    document.getElementById('mode-toggle').addEventListener('click', function() {
+        document.body.classList.toggle('night-mode');
+        var modeText = document.getElementById('mode-text');
+        if (document.body.classList.contains('night-mode')) {
+            modeText.textContent = 'Night Mode';
+            localStorage.setItem('mode', 'night');
+        } else {
+            modeText.textContent = 'Day Mode';
+            localStorage.setItem('mode', 'day');
+        }
+    });
+});
+```
+
+- make selector called `.night-mode` in `.css` file and all classes will also have their styles changed. <br>
+
+```css
+.night-mode {
+    background-color: black;
+    color: rgb(173, 173, 173);
+}
+.night-mode a {
+    background-color: black;
+    color: rgb(173, 173, 173);
+}
+.night-mode .wwd {
+    background-color: rgba(29, 0, 122, 0.498);
+}
+.night-mode .content-achievement {
+    background-color: rgba(29, 0, 122, 0.498);
+}
+.night-mode .main-container {
+    background: #121FCF;
+    background: linear-gradient(to right, #121fcf6c 0%, #cf151262 100%);
+}
+.night-mode .ham-line {
+    background-color: var(--colortextdaywhite);
+}
+```
