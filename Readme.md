@@ -222,3 +222,5 @@ This deployment I will push to the [Git Hub](https://github.com) repository, con
 ## Design Choices
 - Chose a minimalist design to focus on content.
 - Used CSS media query for responsive layout.
+- Ham button on nav bar
+- CSS animation using `@frame` on main container
